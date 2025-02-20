@@ -1,0 +1,75 @@
+/* General styling */
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+label, select, input, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #182d6c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#image-preview img {
+    margin-top: 10px;
+}
+
+#prediction-output {
+    margin-top: 20px;
+    font-size: 1em;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    color: #333;
+}
+
+.warning {
+    color: #ff4d4f;
+    font-weight: bold;
+}
+
+/* Live Camera Section */
+#live-cam-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#live-video {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#live-canvas {
+    display: none;
+}

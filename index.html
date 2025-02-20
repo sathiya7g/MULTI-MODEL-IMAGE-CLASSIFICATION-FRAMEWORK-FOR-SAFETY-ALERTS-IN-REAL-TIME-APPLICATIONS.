@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Image Analysis & Alerts</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
+</head> 
+<body>
+    <div class="container">
+        <h1>Smart Image Analysis & Alerts</h1>
+        
+        <label for="model-selector">Select ML Model:</label>
+        <select id="model-selector">
+            <option value="mobilenet">MobileNet (Image Classification)</option>
+            <option value="coco-ssd">Coco-SSD (Object Detection)</option>
+            <option value="posenet">PoseNet (Human Pose Detection)</option>
+            <option value="mobilenet-coco-ssd">MobileNet + Coco-SSD</option>
+            <option value="mobilenet-posenet">MobileNet + PoseNet</option>
+            <option value="coco-ssd-posenet">Coco-SSD + PoseNet</option>
+        </select>
+
+        <div id="model-description"></div>
+
+        <div id="input-section">
+            <div id="image-preview" style="display:none;">
+                <p><strong>Image Preview:</strong></p>
+                <img id="preview-img" alt="Uploaded Image" style="max-width: 100%; border: 1px solid #ccc; border-radius: 10px;" />
+            </div>
+            <div id="input-image-section">
+                <label for="input-image">Upload an Image:</label>
+                <input type="file" id="input-image" />
+            </div>
+            <button id="predict">Predict</button>
+        </div>
+
+        <div id="prediction-output"></div>
+
+        <!-- Live Camera Section -->
+        <div id="live-cam-section">
+            <h2>Live Camera Feed</h2>
+            <video id="live-video" width="640" height="480" autoplay></video>
+            <canvas id="live-canvas" width="640" height="480" style="display: none;"></canvas>
+            <button id="start-camera">Start Camera</button>
+            <button id="stop-camera">Stop Camera</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
