@@ -60,7 +60,7 @@ Note: These metrics can be customized based on your actual performance evaluatio
 
 
 ## Results and Impact
-The Multi-Model Image Classification Framework for Safety Alerts enhances security and safety measures by offering an AI-driven, real-time monitoring system. It minimizes human errors, ensures quick response to hazards, and provides a scalable solution for industries, smart cities, and public spaces.
+The Multi-Model Image Classification Framework for Safety Alerts enhances security and safety measures by offering an ML-driven, real-time monitoring system. It minimizes human errors, ensures quick response to hazards, and provides a scalable solution for industries, smart cities, and public spaces.
 
 This project lays the groundwork for future developments in automated risk detection, AI-powered surveillance, and IoT-based security solutions, contributing to a safer and smarter world.
 
